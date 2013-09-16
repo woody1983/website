@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Johnny Hsu Photography</title>
+		<meta name="description" content="Photography Portfolio">
+        <meta name="author" content="Rachelle Adelina Clothier">
+		
+		<link rel="stylesheet" href="./bootstrap.css?v=2.2.1">
+		<link rel="stylesheet" href="./nivo-slider.css" />
+		<link rel="stylesheet" href="./styles.css?v=1.0">
+
+		<!--[if lt IE 9]>
+		<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<script src="./jquery.js"></script>
+		<script src="./jquery.nivo.slider.pack.js"></script>
+		<script src="./jquery.twitterfeed.js"></script>
+		<script>
+			jQuery(document).ready(function($) {
+				
+				$('#slider').nivoSlider({
+					 pauseTime: 5000 // How long each slide will show in milliseconds
+				});
+				
+				$("#twitter-feed").twitterfeed({
+					username: 'xiaoputi'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Page Header -->
+		<header id="header">
+			<div class="container">
+
+				<!-- Brand or Logo -->
+				<a href="./index.html" class="brand">Johnny Hsu
+					<p class="brand-tagline">Ruby.self</p>
+				</a>
+
+				<!-- Main Navigation -->
+				<nav id="menu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#"><i class="icon-home"></i> <span>Home</span></a>
+						</li>
+						<li class="">
+							<a href="#"><i class="icon-user"></i> <span>About</span></a>
+						</li>
+						<li class="">
+							<a href="#"><i class="icon-briefcase"></i> <span>Portfolio</span></a>
+						</li>
+						<li class="">
+							<a href="#"><i class="icon-envelope"></i> <span>Contact</span></a>
+						</li>
+					</ul>
+				</nav><!-- End Main Navigation -->
+			</div>
+		</header><!-- End Page Header -->
+
+		<!-- Page Content -->
+		<div id="main">
+			<div class="container">
+
+				<section id="content">
+
+					<div id="showcase" class="media">
+						<div class="media-body">
+							<!-- Image Slider -->
+							<div class="slider-wrapper">
+								<div id="slider" class="nivoSlider">
+									<img width="420" height="230" src="./images/slide1.jpg" alt="" />
+									<img width="420" height="230" src="./images/slide2.jpg" alt="" />
+									<img width="420" height="230" src="./images/slide3.jpg" alt="" title="This is an example of a caption" />
+									<img width="420" height="230" src="./images/slide4.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<article class="media">
+						<header>
+							<h1 class="media-heading">
+								lorem ipsum dolor 
+
+								<time pubdate datetime="2013-09-16">
+									<span class="month">Sep</span>
+									<span class="day">16</span>, 
+									<span class="year">2013</span>
+								</time>
+							</h1>
+						</header>
+
+						<div class="media-body">
+							<img width="200" height="220" src="http://placehold.it/200x220" alt="Demo Image" class="align-left">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut <a href="#">laoreet dolore magna aliquam erat volutpat</a>.</p>
+							<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</article>
+
+					<article id="bio" class="media">
+						<header class="clearfix">
+							<img width="54" height="54" class="avatar pull-left" src="./images/avatar.png">
+							<span class="fontface-janeaustin">Johnny Clothier</span>
+							<h4 class="media-heading">Rachelle Adelina Clothier <small class="media-subheading">photographer</small></h4>
+						</header>
+
+						<div class="media-body">
+							<p>Rachelle is a photographer based out of Halifax, Nova Scotia. She is rarely seen without her camera (obviously), an ice cream in hand, 
+								or music playing. She is a friendly personality with big dreams, and is extremely passionate about creating beautiful images of families and children.</p>
+						</div>
+					</article>
+				</section>
+
+				<!-- Sidebar-A --> 
+				<aside id="sidebar-a" class="sidebar">
+					<!-- Portfolio Block -->
+					<div class="clearfix">
+						<div class="tile gradient-blue">
+							<a class="" href="#">
+								<img width="128" height="128" alt="Portfolio Icon" src="./images/camera.png" class="align-center">
+								<h3 class="tile-title">portfolio</h3>
+							</a>
+						</div>
+					</div>
+
+					<!-- About Me Block -->
+					<div class="clearfix">
+						<div class="tile" style="background: url('./images/p64005602-1.jpg') no-repeat scroll center center;">
+							<a class="" href="#">
+								<h3 class="tile-title" style="padding-top: 144px; margin-bottom: 0;">Mr. _why</h3>
+							</a>
+						</div>
+					</div>
+
+					<!-- Skills Block -->
+					<div class="clearfix">
+						<div class="tile">
+							<h5 class="tile-title"><i class="icon-tasks" ></i> My Skills</h5>
+							<ul class="skills-list">
+								<li>    
+									<div class="progress meter">
+										<div class="bar" style="width: 85%;"></div>
+									</div>
+
+									<label>MySQL</label>
+								</li>
+								<li>    
+									<div class="progress meter">
+										<div class="bar" style="width: 65%;"></div>
+									</div>
+
+									<label>T-SQL</label>
+								</li>
+								<li>    
+									<div class="progress meter">
+										<div class="bar" style="width: 70%;"></div>
+									</div>
+
+									<label>Ruby</label>
+								</li>
+								<li>    
+									<div class="progress meter">
+										<div class="bar" style="width: 80%;"></div>
+									</div>
+
+									<label>Bash/Shell</label>
+								</li>
+								<li>    
+									<div class="progress meter">
+										<div class="bar" style="width: 65%;"></div>
+									</div>
+
+									<label>Unix</label>
+								</li>
+							</ul>
+						</div>
+					</div><!-- End Skills -->
+
+					<!-- Resume Block -->
+					<div class="clearfix">
+						<div class="tile gradient-blue">
+							<a class="" href="#">
+								<img width="128" height="128" alt="Resume Icon" src="./images/inbox_in.png" class="align-center">
+								<h3 class="tile-title">Resume</h3>
+							</a>
+						</div>
+					</div>
+				</aside><!-- End Sidebar-A --> 
+
+				<!-- Sidebar-B -->
+				<aside id="sidebar-b" class="sidebar">
+
+					<!-- Contact Block -->
+					<div class="clearfix">
+						<div class="tile gradient-pink">
+							<a class="" href="#">
+								<img width="128" height="128" alt="Contact Icon" src="./images/envelope.png" class="align-center">
+								<h3 class="tile-title">contact</h3>
+							</a>
+						</div>
+					</div>
+
+					<!-- Twitter Block -->
+					<div class="clearfix">
+						<div class="tile-group-vertical gradient-blue">
+							<div class="clearfix">
+								<div class="tile">
+									<a class="" href="https://twitter.com/rachelleadelina" target="_blank">
+										<img width="128" height="128" alt="Twitter Icon" src="./images/twitter.png" class="align-center">
+										<h3 class="tile-title">latest tweet</h3>
+									</a>
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="tile">	
+									<article id="twitter-feed" class="twitter">
+										<!--<p class="tweet"><a href="#">@loremipsum</a> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Education Block -->
+					<div class="clearfix">
+						<div class="tile">
+							<h5 class="tile-title"><i class="icon-bookmark" ></i> Education</h5>
+							<dl class="education-list">
+								<dt>2011 - 2012</dt>
+								<dd>Lorem ipsum dolor sit amet.</dd>
+
+								<dt>2010 - 2011</dt>
+								<dd>Lorem ipsum dolor sit amet.</dd>
+
+								<dt>2009 - 2010</dt>
+								<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</dd>
+							</dl>
+						</div>
+					</div><!-- End Education Block -->
+				</aside><!-- End Sidebar-B --> 
+			</div><!-- End Container --> 
+		</div><!-- End Page Content -->
+
+		<!-- Page Footer -->
+		<footer id="footer">
+			<div class="container">
+				<a id="totop-scroller" href="#page-wrapper"></a>
+				<p class="copyright">Copyright © 2012 Rachelle Clothier.</p>
+			</div>
+		</footer><!-- End Page Footer -->
+		
+	</body>
+</html>
